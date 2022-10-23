@@ -203,7 +203,13 @@ svg {
 }
 
 #socialmedia {
-  background-color: #D9B9AD;
+  align: center;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  
