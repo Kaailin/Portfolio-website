@@ -1,15 +1,126 @@
 body{background-color: lightgrey;}
 
+header {
+  background-color: #ff44c4;
+}
 /*
 Colors used:
 Primary Color (baige): #A66954;
 Secondary Color (Oragnge): #AD4521;
 Secondary Color 2 (peach): #D9B9AD;
 
+ID's
+id="contact"
+id="button"
 font
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 */
 
+/*font*/
 body {font-family: 'Lato', sans-serif;}
+
+/*font weight*/
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+/*font details*/
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/*image width*/
+img {
+  width: 100%;
+}
+
+/*hyperlinks hover and colour*/
+a {
+  color: #AD4521;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #AD4521;
+}
+
+a:active { /* selected link */
+  color: #D9B9AD;
+}
+a:hover {
+  color: #A66954;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+/*webpage via keyboard*/
+a:hover,
+a:focus {
+  color: #A66954;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+/*Read more button*/
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/*webpage via keyboard (button)*/
+a:hover,
+a:focus {
+  color: #A66954;
+  text-decoration: underline;
+}
+
+/*Contact/email button*/
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+header {background-color: #ff44c4;}
