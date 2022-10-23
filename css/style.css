@@ -1,0 +1,15 @@
+body{background-color: lightgrey;}
+
+/*
+Colors used:
+Primary Color (baige): #A66954;
+Secondary Color (Oragnge): #AD4521;
+Secondary Color 2 (peach): #D9B9AD;
+
+font
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+*/
+
+body {font-family: 'Lato', sans-serif;}
