@@ -1,8 +1,39 @@
-body{background-color: lightgrey;}
+body{background-color: white;}
 
+/*header*/
 header {
-  background-color: #ff44c4;
+  background-color: #D9B9AD;
+
+border-bottom: 3px solid #4a4a4a;
+
+  text-align: center;
+  padding: 10px 0;
 }
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#myDiv {
+  position: relative;
+box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+/*END OF header*/
+
+
 /*
 Colors used:
 Primary Color (baige): #A66954;
@@ -12,10 +43,18 @@ Secondary Color 2 (peach): #D9B9AD;
 ID's
 id="contact"
 id="button"
+id="work
 font
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+padding: 10px;
+margin: 10px;
+padding: 10px; /* Adds a 10px inner spacing to all sides */
+padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
+padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+
 */
 
 /*font*/
@@ -123,4 +162,48 @@ a:focus {
   color: #ffffff;
 }
 
-header {background-color: #ff44c4;}
+/* Layout styling */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Class+"row" */
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+
+#hero h1,h2 {
+  text-align: center; /* Centers text */
+}
+/* END OF Layout styling */
+
+
+/*image width*/
+svg {
+  width: 9%;
+}
+
+/*Hero section*/
+#hero {
+  background-color: #D9B9AD;
+}
+
+#hero {
+  background-color: #D9B9AD;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#socialmedia {
+  background-color: #D9B9AD;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
