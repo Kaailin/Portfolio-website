@@ -1,6 +1,7 @@
 body{background-color: white;}
 
 /*header*/
+
 header {
   background-color: #D9B9AD;
 
@@ -66,7 +67,7 @@ body {font-family: 'Lato', sans-serif;}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
@@ -130,10 +131,14 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
+   transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
 }
 
 /*Read more button*/
@@ -174,6 +179,12 @@ a:focus {
 /* Class+"row" */
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
@@ -202,6 +213,11 @@ svg {
   width: 100%;
 }
 
+#hero span {
+  display: block;
+  text-align: center;
+}
+
 #socialmedia {
   align: center;
   padding: 20px 0;
@@ -212,4 +228,60 @@ svg {
     padding: 10px 0;
   }
 
-  
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: -16px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 100px
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
