@@ -7,7 +7,7 @@ header {
 
 border-bottom: 3px solid #4a4a4a;
 
-  text-align: center;
+  text-align:
   padding: 10px 0;
 }
 
@@ -16,9 +16,27 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
+/*code removed was nav > ul > li {
   display: inline-block;
+} for sentre menu allignment */
+
+/*Hmburger Icon */
+.navtoggle li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  paddingg-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+/*End of Hmburger Icon */
 
 nav > ul > li > a {
   padding: 0 15px;
