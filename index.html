@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <!-- HEAD starts here -->
-  <header>
+  <head>
+    <script>src="https://kit.fontawesome.com/319bcd23ee.js"crossorigin="anonymous"</script>
+<style media="all" id="fa-v4-font-face">
+/*!
+ * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-regular-400.ttf) format("truetype");unicode-range:u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0e6,u+f0eb,u+f0f6-f0f8,u+f10c,u+f114-f115,u+f118-f11a,u+f11c-f11d,u+f133,u+f147,u+f14e,u+f150-f152,u+f185-f186,u+f18e,u+f190-f192,u+f196,u+f1c1-f1c9,u+f1d9,u+f1db,u+f1e3,u+f1ea,u+f1f7,u+f1f9,u+f20a,u+f247-f248,u+f24a,u+f24d,u+f255-f25b,u+f25d,u+f271-f274,u+f278,u+f27b,u+f28c,u+f28e,u+f29c,u+f2b5,u+f2b7,u+f2ba,u+f2bc,u+f2be,u+f2c0-f2c1,u+f2c3,u+f2d0,u+f2d2,u+f2d4,u+f2dc}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-v4compatibility.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-v4compatibility.ttf) format("truetype");unicode-range:u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,u+f175-f178,u+f195,u+f1f8,u+f219,u+f27a}
+ </style>
+ <style media="all" id="fa-v5-font-face">
+ /*!
+  * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
+  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+  * Copyright 2022 Fonticons, Inc.
+  */@font-face{font-family:"Font Awesome 5 Brands";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:900;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.2.0/webfonts/free-fa-regular-400.ttf) format("truetype")}
+ </style>
+<style media="all" id="fa-v4-shims">
+/*!
+ * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */.fa.fa-glass:before{content:"\f000"}.fa.fa-envelope-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-envelope-o:before{content:"\f0e0"}.fa.fa-star-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-star-o:before{content:"\f005"}.fa.fa-close:before,.fa.fa-remove:before{content:"\f00d"}.fa.fa-gear:before{content:"\f013"}.fa.fa-trash-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-trash-o:before{content:"\f2ed"}.fa.fa-home:before{content:"\f015"}.fa.fa-file-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-file-o:before{content:"\f15b"}.fa.fa-clock-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-clock-o:before{content:"\f017"}.fa.fa-arrow-circle-o-down{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-arrow-circle-o-down:before{content:"\f358"}.fa.fa-arrow-circle-o-up{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-arrow-circle-o-up:before{content:"\f35b"}.fa.fa-play-circle-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-play-circle-o:before{content:"\f144"}.fa.fa-repeat:before,.fa.fa-rotate-right:before{content:"\f01e"}.fa.fa-refresh:before{content:"\f021"}.fa.fa-list-alt{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-list-alt:before{content:"\f022"}.fa.fa-dedent:before{content:"\f03b"}.fa.fa-video-camera:before{content:"\f03d"}.fa.fa-picture-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-picture-o:before{content:"\f03e"}.fa.fa-photo{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-photo:before{content:"\f03e"}.fa.fa-image{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-image:before{content:"\f03e"}.fa.fa-map-marker:before{content:"\f3c5"}.fa.fa-pencil-square-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-pencil-square-o:before{content:"\f044"}.fa.fa-edit{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-edit:before{content:"\f044"}.fa.fa-share-square-o:before{content:"\f14d"}.fa.fa-check-square-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-check-square-o:before{content:"\f14a"}.fa.fa-arrows:before{content:"\f0b2"}.fa.fa-times-circle-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-times-circle-o:before{content:"\f057"}.fa.fa-check-circle-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-check-circle-o:before{content:"\f058"}.fa.fa-mail-forward:before{content:"\f064"}.fa.fa-expand:before{content:"\f424"}.fa.fa-compress:before{content:"\f422"}.fa.fa-eye,.fa.fa-eye-slash{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-warning:before{content:"\f071"}.fa.fa-calendar:before{content:"\f073"}.fa.fa-arrows-v:before{content:"\f338"}.fa.fa-arrows-h:before{content:"\f337"}.fa.fa-bar-chart-o:before,.fa.fa-bar-chart:before{content:"\e0e3"}.fa.fa-twitter-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-twitter-square:before{content:"\f081"}.fa.fa-facebook-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-facebook-square:before{content:"\f082"}.fa.fa-gears:before{content:"\f085"}.fa.fa-thumbs-o-up{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-thumbs-o-up:before{content:"\f164"}.fa.fa-thumbs-o-down{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-thumbs-o-down:before{content:"\f165"}.fa.fa-heart-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-heart-o:before{content:"\f004"}.fa.fa-sign-out:before{content:"\f2f5"}.fa.fa-linkedin-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-linkedin-square:before{content:"\f08c"}.fa.fa-thumb-tack:before{content:"\f08d"}.fa.fa-external-link:before{content:"\f35d"}.fa.fa-sign-in:before{content:"\f2f6"}.fa.fa-github-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-github-square:before{content:"\f092"}.fa.fa-lemon-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-lemon-o:before{content:"\f094"}.fa.fa-square-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-square-o:before{content:"\f0c8"}.fa.fa-bookmark-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-bookmark-o:before{content:"\f02e"}.fa.fa-facebook,.fa.fa-twitter{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-facebook:before{content:"\f39e"}.fa.fa-facebook-f{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-facebook-f:before{content:"\f39e"}.fa.fa-github{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-credit-card{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-feed:before{content:"\f09e"}.fa.fa-hdd-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hdd-o:before{content:"\f0a0"}.fa.fa-hand-o-right{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hand-o-right:before{content:"\f0a4"}.fa.fa-hand-o-left{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hand-o-left:before{content:"\f0a5"}.fa.fa-hand-o-up{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hand-o-up:before{content:"\f0a6"}.fa.fa-hand-o-down{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hand-o-down:before{content:"\f0a7"}.fa.fa-globe:before{content:"\f57d"}.fa.fa-tasks:before{content:"\f828"}.fa.fa-arrows-alt:before{content:"\f31e"}.fa.fa-group:before{content:"\f0c0"}.fa.fa-chain:before{content:"\f0c1"}.fa.fa-cut:before{content:"\f0c4"}.fa.fa-files-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-files-o:before{content:"\f0c5"}.fa.fa-floppy-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-floppy-o:before{content:"\f0c7"}.fa.fa-save{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-save:before{content:"\f0c7"}.fa.fa-navicon:before,.fa.fa-reorder:before{content:"\f0c9"}.fa.fa-magic:before{content:"\e2ca"}.fa.fa-pinterest,.fa.fa-pinterest-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-pinterest-square:before{content:"\f0d3"}.fa.fa-google-plus-square{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-google-plus-square:before{content:"\f0d4"}.fa.fa-google-plus{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-google-plus:before{content:"\f0d5"}.fa.fa-money:before{content:"\f3d1"}.fa.fa-unsorted:before{content:"\f0dc"}.fa.fa-sort-desc:before{content:"\f0dd"}.fa.fa-sort-asc:before{content:"\f0de"}.fa.fa-linkedin{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-linkedin:before{content:"\f0e1"}.fa.fa-rotate-left:before{content:"\f0e2"}.fa.fa-legal:before{content:"\f0e3"}.fa.fa-dashboard:before,.fa.fa-tachometer:before{content:"\f625"}.fa.fa-comment-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-comment-o:before{content:"\f075"}.fa.fa-comments-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-comments-o:before{content:"\f086"}.fa.fa-flash:before{content:"\f0e7"}.fa.fa-clipboard:before{content:"\f0ea"}.fa.fa-lightbulb-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-lightbulb-o:before{content:"\f0eb"}.fa.fa-exchange:before{content:"\f362"}.fa.fa-cloud-download:before{content:"\f0ed"}.fa.fa-cloud-upload:before{content:"\f0ee"}.fa.fa-bell-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-bell-o:before{content:"\f0f3"}.fa.fa-cutlery:before{content:"\f2e7"}.fa.fa-file-text-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-file-text-o:before{content:"\f15c"}.fa.fa-building-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-building-o:before{content:"\f1ad"}.fa.fa-hospital-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-hospital-o:before{content:"\f0f8"}.fa.fa-tablet:before{content:"\f3fa"}.fa.fa-mobile-phone:before,.fa.fa-mobile:before{content:"\f3cd"}.fa.fa-circle-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-circle-o:before{content:"\f111"}.fa.fa-mail-reply:before{content:"\f3e5"}.fa.fa-github-alt{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-folder-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-folder-o:before{content:"\f07b"}.fa.fa-folder-open-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-folder-open-o:before{content:"\f07c"}.fa.fa-smile-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-smile-o:before{content:"\f118"}.fa.fa-frown-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-frown-o:before{content:"\f119"}.fa.fa-meh-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-meh-o:before{content:"\f11a"}.fa.fa-keyboard-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-keyboard-o:before{content:"\f11c"}.fa.fa-flag-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-flag-o:before{content:"\f024"}.fa.fa-mail-reply-all:before{content:"\f122"}.fa.fa-star-half-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-star-half-o:before{content:"\f5c0"}.fa.fa-star-half-empty{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-star-half-empty:before{content:"\f5c0"}.fa.fa-star-half-full{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-star-half-full:before{content:"\f5c0"}.fa.fa-code-fork:before{content:"\f126"}.fa.fa-chain-broken:before,.fa.fa-unlink:before{content:"\f127"}.fa.fa-calendar-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-calendar-o:before{content:"\f133"}.fa.fa-css3,.fa.fa-html5,.fa.fa-maxcdn{font-family:"Font Awesome 6 Brands";font-weight:400}.fa.fa-unlock-alt:before{content:"\f09c"}.fa.fa-minus-square-o{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-minus-square-o:before{content:"\f146"}.fa.fa-level-up:before{content:"\f3bf"}.fa.fa-level-down:before{content:"\f3be"}.fa.fa-pencil-square:before{content:"\f14b"}.fa.fa-external-link-square:before{content:"\f360"}.fa.fa-compass{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-caret-square-o-down{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-caret-square-o-down:before{content:"\f150"}.fa.fa-toggle-down{font-family:"Font Awesome 6 Free";font-weight:400}.fa.fa-toggle-down:before{c…
+</style>
 
-    <div class="container">
-  <div class="navtoggle" id="myNavtoggle">
-    <img class="logo" src="img/logo.svg" alt="Katarina Oremo UX/UX Designer" >|
-    <nav>
+<style media="all" id="fa-main">
+/*!
+ * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */.fa{font-family:var(--fa-style-family,"Font Awesome 6 Free");font-weight:var(--fa-style,900)}.fa,.fa-brands,.fa-classic,.fa-regular,.fa-sharp,.fa-solid,.fab,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fa-classic,.fa-regular,.fa-solid,.far,.fas{font-family:"Font Awesome 6 Free"}.fa-brands,.fab{font-family:"Font Awesome 6 Brands"}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.08333em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.07143em;vertical-align:.05357em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.04167em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width, 2em)*-1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-radius:var(--fa-border-radius,.1em);border:var(--fa-border-width,.08em) var(--fa-border-style,solid) var(--fa-border-color,#eee);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade,.fa-fade{-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s)}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-shake,.fa-spin{-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,steps(8));animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{-webkit-animation-delay:-1ms;animation-delay:-1ms;-webkit-animation-duration:1ms;animation-duration:1ms;-webkit-animation-iteration-count:1;animation-iteration-count:1;transition-delay:0s;transition-duration:0s}}@-webkit-keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@-webkit-keyframes fa-bounce{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}to{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}}@keyframes fa-bounce{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}to{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}}@-webkit-keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@-webkit-keyframes fa-beat-fade{0%,to{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transfo…
+</style>
 
-    <script
-			src="https://kit.fontawesome.com/319bcd23ee.js"
-			crossorigin="anonymous"
-		></script>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" type="text/css" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- stylesheet -->
+<link rel="stylesheet" type="text/css" href="<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- END of stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- END of stylesheet -->
 
 <!--viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- END of viewport -->
+</head>
 
+<body>
+<!-- Head starts here -->
+<header>
+  <div class="container">
+  <div class="navtoggle" id="myNavtoggle">
+    <img class="logo" src="img/logo.svg" alt="Katarina Oremo UX/UX Designer">
+    "|"
     <nav>
       <ul class="navigation">
-      <li><a href="Cacao.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>
+      ::marker
+      <a href="Cacao.html">Work</a>
+      </li>
+      <li>
+      :: marker
+      <a href="about.html">About</a>
+      </li>
+      <li>
+      :: marker
+      <a href="#contact">Contact</a>
+      </li>
+      <!-- Hamburger Icon -->
+      <li>
+      :: marker
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+      </a>
+      </li>
+      <!-- Hamburger Icon ENDS here -->
     </ul>
     </nav>
-
-<!-- Hamburger Icon -->
-<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-<!-- Hamburger Icon ENDS here -->
-
-  </header>
+    </div>
+    </div>
+    </header>
 <!-- HEAD ENDS here -->
-
-
+<main>
 <!-- HERO starts here -->
-<body>
-  <main>
     <div id="hero">
       <div class="container">
-        <h1>
-          Hi, my name is Katarina Oremo
-        </h1>
+        <h1> Hi, my name is Katarina Oremo </h1>
       </div>
 
       <div>
-        <span>
-          I'm a UI/UX designer located in Sydney
-        </span>
+        <span> I'm a UI/UX designer located in Sydney </span>
       </div>
 
       <div>
@@ -68,29 +102,30 @@
 <!-- WORK starts here -->
 <div id="work">
   <divclass="container">
-    <h2>
-      My Work
-    </h2>
+    <h2> My Work </h2>
+  </div>
+  </divclass="container">
   </div>
   <div class="row">
 
     <!-- left colum -->
-    <div><!-- open row that holds (2) columns for project -->
-      <div class="col-md-6 col-md-6 col-lg-7" class*="col-"><!-- open first column (used for image) -->
+    <div>
+    <!-- open row that holds (2) columns for project -->
+      <div class="col-md-6 col-md-6 col-lg-7" class*="col-">
+      <!-- open first column (used for image) -->
         <picture>
         <source srcset="img/cacao/project1_Cacao@1x.jpg" media="(max-width:767px)">
         <img src="img/cacao/project1_Cacao@1x.jpg" alt="My Image">
       </picture>
-  </div><!-- end first column -->
-  </div><!-- open second column (used for text) -->
+  </div>
+  <!-- end first column -->
+  </div>
 
-
-    <!-- right colum -->
+  <!-- open second column (used for text) -->
+<!-- right colum -->
   <div class="col-md-6 col-md-6 col-lg-5" class*="col-">
     <!-- heading for the project -->
-    <h3>
-      Cacao
-    </h3>
+    <h3> Cacao </h3>
     <!-- open paragraph -->
     <p>
       Cacao is an online store carefully designed through Adobe XD, following four steps: Research, Ideation, Validation, and Design.
@@ -102,15 +137,19 @@
 
     <a href="#" class="button" id="button">Read more</a>
     <!-- end second column -->
-  </div> <!-- end row that holds (2) columns for project -->
-
+  </div>
+  <!-- end row that holds (2) columns for project -->
 
   <!-- PROJECT 2-->
   <!-- left colum -->
-  <div><!-- open row that holds (2) columns for project -->
-    <div class="col-md-6 col-md-6 col-lg-7" class*="col-"><!-- open first column (used for image) -->
+  <div>
+  <!-- open row that holds (2) columns for project -->
+    <div class="col-md-6 col-md-6 col-lg-7" class*="col-">
+    <!-- open first column (used for image) -->
+      <a href="" target="_blank">
+     <!--?xml version="1.0" ?-->
 
-      <a href="" target="_blank"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
         </defs>
@@ -710,17 +749,14 @@
         </g>
     </svg>
   </a>
-    </picture>
-
-  </div><!-- end first column -->
-  </div><!-- open second column (used for text) -->
-
+  </div>
+  <!-- end first column -->
+  </div>
+  <!-- open second column (used for text) -->
 
   <div class="col-md-6 col-md-6 col-lg-5" class*="col-">
     <!-- heading for the project -->
-    <h3>
-      Cacao
-    </h3>
+    <h3> Cacao </h3>
     <!-- open paragraph -->
     <p>
       Cacao is an online store carefully designed through Adobe XD, following four steps: Research, Ideation, Validation, and Design.
@@ -732,7 +768,8 @@
 
     <a href="#" class="button" id="button">Read more</a>
     <!-- end second column -->
-  </div> <!-- end row that holds (2) columns for project -->
+  </div>
+  <!-- end row that holds (2) columns for project -->
   <!-- END OF PROJECT 2-->
 
 
@@ -746,11 +783,11 @@
         <p>
           I’m always open for new design opportunities or simply to exchange ideas. Call: <a href="tel:+610432235890">+61 0432235890</a> or prefer sending an email?
         </p>
+
       <!-- email button -->
         <a href="mailto:katarinaaoremo(at)gmail.com"class="button contact" id="contact">
           Email me
         </a>
-
       </div>
 
   <!--Social Media Layout and Placeholders-->
@@ -778,6 +815,8 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
+</div>
+</div>
 </body>
 
 </html>
