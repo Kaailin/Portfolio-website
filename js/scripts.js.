@@ -1,2 +1,10 @@
-// Welcoe message
+// Welcome message
 console.log("Hi! Welcome to My Portfolio Site.");
+function menuToggle (event) {
+    var className = document.querySelector('#myNavtoggle').className;
+    if (className === 'navtoggle') {
+        document.querySelector('#myNavtoggle').className += ' responsive';
+    } else {
+        document.querySelector('#myNavtoggle').className = 'navtoggle';
+    }
+}
