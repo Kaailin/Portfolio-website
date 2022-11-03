@@ -1,4 +1,4 @@
-// Welcome message
+// Welcoe message
 console.log("Hi! Welcome to My Portfolio Site.");
 function menuToggle (event) {
     var className = document.querySelector('#myNavtoggle').className;
